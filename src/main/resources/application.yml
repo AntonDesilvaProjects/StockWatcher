@@ -1,0 +1,18 @@
+server:
+  port: 9090
+
+stock:
+  client:
+    alphavantage:
+      host: https://www.alphavantage.co
+      apiKey: <API_KEY>
+
+spring:
+  datasource:
+    url: jdbc:h2:file:/Users/adesilva/Development/projects/scala/ScalaStockWatcher/stockdb
+    username: my_user
+    password: my_pass
+    driverClassName: org.h2.Driver
+  h2:
+    console:
+      enabled: true
